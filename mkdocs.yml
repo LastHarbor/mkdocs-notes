@@ -1,0 +1,6 @@
+site_name: Notes for DevOps
+site_url: https://lastharbor.github.io/mkdocs-notes/
+theme:
+  name: material
+site_author: Anton Kulakevich
+copyright: Anton Kulakevich, AwesomeEduSPB
