@@ -1,6 +1,6 @@
 # DevOpsBasics
 
-# Страницы
+## Страницы
 
 Настройка ZSH окружения Linux -
  <https://www.linuxfordevices.com/tutorials/linux/make-arch-terminal-awesome>
@@ -9,7 +9,7 @@
 
 ---
 
-[Proxmox](Subpages)
+[Proxmox](Proxmox)
 
 ---
 
@@ -43,16 +43,16 @@
 
 [Создание сертификата Let’s Encrypt для Apache в CentOS 7](https://www.8host.com/blog/sozdanie-sertifikata-lets-encrypt-dlya-apache-v-centos-7/)
 
-# Пользователи и VIM
+## Пользователи и VIM
 
-## VIM
+### VIM
 
 W - переместиться на начало слова
 E  - переместиться на конец слова
 
 B - переместить курсор в начало слова c конца
 
-## Пользователи
+### Пользователи
 
 При выводе файла /etc/passwd мы получаем примерно вот такой вывод в командную строку.
 
@@ -183,13 +183,13 @@ groupadd groupname
 
 ![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](DevOpsBasics/707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
 
-# Подключение при помощи ключа SSH
+## Подключение при помощи ключа SSH
 
 - Генерируем ключевую пару ssh-keygen -t ed25519 -C “comment”, где ssh-keygen это исполняемый файл, который генерирует ключи. -t ED25519 - это тип ключа. -C “comment”  - добавляет комментарий к ключу.
 - Копируем открытый ключ на сервер: ssh-copy-id -i “key.pub” user@server
 - Подключаемся к серверу ssh user@server
 
-## Копирование файлов через SSH
+### Копирование файлов через SSH
 
 Копирование осуществляется через SSH при помощи команды scp.
 
@@ -202,9 +202,9 @@ groupadd groupname
 - scp user@server:/tmp/1.txt /home/example — Это копирование с сервера к себе на машину
 - scp /home/example/1.txt user@server:/tmp — Это копирование на удаленный сервер.
 
-# Мониторинг
+## Мониторинг
 
-## Команды
+### Команды
 
 Краткое имя сервера - hostname
 
@@ -240,7 +240,7 @@ groupadd groupname
 
 ![Untitled](DevOpsBasics/Untitled%208.png)
 
-## Производительность
+### Производительность
 
 Процессор и память
 
@@ -272,7 +272,7 @@ uptime или w
 
 ![Untitled](DevOpsBasics/Untitled%2011.png)
 
-# Процессы и перенаправление вывода
+## Процессы и перенаправление вывода
 
 Убить процесс
 
@@ -334,17 +334,17 @@ du опции /путь/к/папке
 du -h - будет показывать размерность файла(МБайт, КБайт)
 ```
 
-## Стандартные потоки
+### Стандартные потоки
 
 - Команда xargs превращает строку, полученную на стандартный ввод в аргументы и передаёт их команде.
 - Операторы перенаправления вывода:  >, >>.
 - Пайп позволяет передать стандартный вывод одной команды на стандартный ввод другой.
 
-### STDIN  —  ввод  —  0
+#### STDIN  —  ввод  —  0
 
-### STDOUT  — вывод  —  1
+#### STDOUT  — вывод  —  1
 
-### STDERR  —  ошибки  —  2
+#### STDERR  —  ошибки  —  2
 
 ![Untitled](DevOpsBasics/Untitled%2012.png)
 
@@ -386,7 +386,7 @@ traceroute ya.ru &> /dev/null
 
 ![Untitled](DevOpsBasics/Untitled%2013.png)
 
-# Планировщик задач Cron
+## Планировщик задач Cron
 
 **Cron** позволяет запуcкать команды/скрипты по рассписанию.
 
@@ -404,7 +404,7 @@ traceroute ya.ru &> /dev/null
 
 ![Untitled](DevOpsBasics/Untitled%2020.png)
 
-# Скрипты
+## Скрипты
 
 Написание скрипта начинается вот с такой строчки
 
@@ -428,7 +428,7 @@ traceroute ya.ru &> /dev/null
 
 ![Untitled](DevOpsBasics/Untitled%2024.png)
 
-## Исполнение скрипта без указания ./ в определенной директории
+### Исполнение скрипта без указания ./ в определенной директории
 
 Для того скрипт выполнялся без указания директории ./ необходимо добавить нужную нам директорию в $PATH. Для этого мы выполним следующие действия.
 
@@ -462,7 +462,7 @@ source ~./bashrc
 
 Для переноса директории содержащей пробелы скриптом, требуется переменную в скрипте заключить в двойные кавычки - “”
 
-### Условный оператор if
+#### Условный оператор if
 
 В Bash условный оператор if записывается следующим образом
 
@@ -475,7 +475,7 @@ if [ a = b ]
 fi
 ```
 
-## Арифметические операции
+#### Арифметические операции
 
 [Арифметические операции в Bash скрипте](https://devhops.ru/linux/bash/arithmetics.php)
 
@@ -497,7 +497,7 @@ expr - похож на **let** за исключением того, что в
 
 Нужно ставить пробелы вокруг операторов.
 
-### Оператор выбора
+##### Оператор выбора
 
 [Командная строка Linux | Конструкция case (metanit.com)](https://metanit.com/os/linux/12.9.php?ysclid=lzmirwcymr695353212)
 
@@ -511,7 +511,7 @@ case "$перменная" in
 esac
 ```
 
-## Цикл While
+#### Цикл While
 
 Тело цикла While выглядит следующим образом
 
@@ -525,7 +525,7 @@ done
 
 [Цикл while в Bash - Команды Linux](https://routerus.com/bash-while-loop/)
 
-## Until
+#### Until
 
 Цикл « `until` используется для выполнения заданного набора команд до тех пор, пока данное условие оценивается как ложное.
 
@@ -538,7 +538,7 @@ do
 done
 ```
 
-## Настройки приглашения командной строки
+#### Настройки приглашения командной строки
 
 [ZENCOD.ru](https://zencod.ru/articles/prompt-string-bash/)
 
@@ -546,13 +546,13 @@ done
 
 **Ctrl + R - поиск по истории вводимых команд в shell linux.**
 
-## Способ передачи многострочного текста в команду
+#### Способ передачи многострочного текста в команду
 
 [Bash Heredoc](https://linuxize.com/post/bash-heredoc/)
 
 ![image.png](DevOpsBasics/image%201.png)
 
-## Функции
+#### Функции
 
 Синтаксис создания функции очень прост:
 
@@ -564,13 +564,13 @@ done
 
 [Функции bash в скриптах - Losst](https://losst.pro/funktsii-bash-v-skriptah)
 
-## Архивация
+#### Архивация
 
 По умолчанию в системах Unix/Linux включен встроенный архиватор tar, позволяющий запаковывать/распаковывать архив и выполнять много других операций с заархивированными файлами. В его функционал не входит компрессия, но он отлично работает с такими утилитами, как Gzip и BZip2 – с помощью них и выполняется сжатие файлов.
 
 [Команда tar: архивация, распаковка и сжатие файлов в Linux](https://timeweb.com/ru/community/articles/komanda-tar-arhivaciya-raspakovka-i-szhatie-faylov-v-linux)
 
-## AWK
+#### AWK
 
 Команда awk - один из самых мощных инструментов для обработки и фильтрации текста, доступный даже для людей никак не связных с программированием. Это не просто утилита, а целый язык разработанный для обработки и извлечения данных. В этой статье мы разберемся как пользоваться awk.
 
@@ -580,7 +580,7 @@ done
 
 ![image.png](DevOpsBasics/image%203.png)
 
-## SED
+#### SED
 
 Команда sed - это потоковый редактор текста, работающий по принципу замены. Его можно использовать для поиска, вставки, замены и удаления фрагментов в файле. С помощью этой утилиты вы можете редактировать файлы не открывая их. Будет намного быстрее если вы напишите что и на что надо заменить, чем вы будете открывать редактор vi, искать нужную строку и вручную всё заменять.
 
@@ -592,9 +592,9 @@ done
 
 ![image.png](DevOpsBasics/image%206.png)
 
-## Best Practices
+#### Best Practices
 
-# IP, DNS
+## IP, DNS
 
 ![Untitled](DevOpsBasics/Untitled%2030.png)
 
@@ -604,9 +604,9 @@ mtr - расширение для traceroute, которое помимо это
 
 ![Untitled](DevOpsBasics/Untitled%2031.png)
 
-# WWW
+## WWW
 
-## HTTP
+### HTTP
 
 [Простым языком об HTTP](https://habr.com/ru/articles/215117/)
 
@@ -616,7 +616,7 @@ mtr - расширение для traceroute, которое помимо это
 
 ![image.png](DevOpsBasics/image%209.png)
 
-# Системы инициализации
+## Системы инициализации
 
 [](https://losst.pro/sistemy-initsializatsii-linux)
 
@@ -634,9 +634,9 @@ mtr - расширение для traceroute, которое помимо это
 
 ![image.png](DevOpsBasics/image%2013.png)
 
-## Systemd
+### Systemd
 
-# Основные виды юнитов
+### Основные виды юнитов
 
 ![image.png](DevOpsBasics/image%2014.png)
 
@@ -654,11 +654,11 @@ mtr - расширение для traceroute, которое помимо это
 
 ![image.png](DevOpsBasics/image%2021.png)
 
-# Symlink и hardlink
+## Symlink и hardlink
 
 [Символические и жесткие ссылки Linux - Losst](https://losst.pro/simvolicheskie-i-zhestkie-ssylki-linux)
 
-# Каталог /dev
+## Каталог /dev
 
 [Команда mknod](https://linux-faq.ru/page/komanda-mknod)
 
@@ -666,7 +666,7 @@ mtr - расширение для traceroute, которое помимо это
 
 [How to Create Block Device Files Using mknod Command](https://www.tecmint.com/mknod-command/)
 
-# Монтирование файловой системы
+## Монтирование файловой системы
 
 [Монтирование диска в Linux - Losst](https://losst.pro/montirovanie-diska-v-linux?ysclid=m0usp3iemx999697633)
 
@@ -674,7 +674,7 @@ mtr - расширение для traceroute, которое помимо это
 
 13 - Разметка диска
 
-# Разметка диска
+## Разметка диска
 
 [Команда fdisk в Linux - Losst](https://losst.pro/komanda-fdisk-v-linux?ysclid=m0v0g7b4ti827967170)
 
@@ -684,7 +684,7 @@ mtr - расширение для traceroute, которое помимо это
 
 ![image.png](DevOpsBasics/image%2023.png)
 
-# Реляционные базы данных
+## Реляционные базы данных
 
 ![image.png](DevOpsBasics/image%2024.png)
 
@@ -692,11 +692,11 @@ mtr - расширение для traceroute, которое помимо это
 
 ![image.png](DevOpsBasics/image%2026.png)
 
-## Типы данных MySQL
+### Типы данных MySQL
 
 ![image.png](DevOpsBasics/image%2027.png)
 
-## DML, DDL, Transaction
+### DML, DDL, Transaction
 
 ![image.png](DevOpsBasics/image%2028.png)
 
@@ -704,9 +704,9 @@ mtr - расширение для traceroute, которое помимо это
 
 ![image.png](DevOpsBasics/image%2030.png)
 
-## Транзакции
+### Транзакции
 
-### ACID - свойства
+#### ACID - свойства
 
 [ACID. Что под капотом у транзакции](https://habr.com/ru/companies/simbirsoft/articles/572540/)
 
@@ -720,15 +720,15 @@ mtr - расширение для traceroute, которое помимо это
 3. **Изолированность** требует, чтобы при параллельном выполнении транзакции не влияли друг на друга.
 4. **Прочность** гарантирует, что, если пользователь получил подтверждение, что транзакция выполнена, изменения не будут отменены из за какого-либо сбоя.
 
-### Base - свойства
+#### Base - свойства
 
 - Базовая доступность (Basically available)
 - Мягкое состояние (Soft state)
 - Согласованность в конечном счёте (Eventual consistenct)
 
-# Не реляционные базы данных
+## Не реляционные базы данных
 
-## CAP - Теорема
+### CAP - Теорема
 
 Для любой реализации распределенных вычислений возможно обеспечить не более двух из трёх следующих свойств.
 
@@ -743,9 +743,11 @@ mtr - расширение для traceroute, которое помимо это
 - Реляционная модель
 - Не реляционная модель
 
-# Резервное копирование
+## Резервное копирование
 
-## Виды резервного копирования
+### Виды резервного копирования
+
+### Создание Backup базы данныз
 
 - Полное резервное копирование
 - Дифференциальное резервное копирование
@@ -765,11 +767,11 @@ sudo mysqldump -u root mydb > /tmp/dump.sql
 sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 ```
 
-# TCP/IP
+## TCP/IP
 
 ![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](DevOpsBasics/42B48683-BFE9-4262-AACC-EAA9C9201685.png)
 
-## Канальный уровень
+### Канальный уровень
 
 Типы передачи данных
 
@@ -779,7 +781,7 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 
 ![image.png](DevOpsBasics/image%2031.png)
 
-## Сетевой уровень
+### Сетевой уровень
 
 Схема IP пакета
 
@@ -795,4 +797,4 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 
 ![image.png](DevOpsBasics/image%2035.png)
 
-## Транспортный уровень
+### Транспортный уровень

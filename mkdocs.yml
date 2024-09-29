@@ -5,6 +5,8 @@ theme:
 site_author: Anton Kulakevich
 copyright: Anton Kulakevich, AwesomeEduSPB
 nav:
-    - DevOpsBasics: 
+    - Home: index.md
+    - About: About.md
+    - DevOpsBasics:
             - Basics: Dev Ops Basics.md
             - Proxmox: Proxmox.md
