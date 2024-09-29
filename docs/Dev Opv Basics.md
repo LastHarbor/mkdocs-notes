@@ -9,11 +9,11 @@
 
 ---
 
-[Proxmox](Proxmox%209f19963ad6b9487e9527e2f8ba3852fb.md)
+[Proxmox](Dev Opv Basics/Proxmox%209f19963ad6b9487e9527e2f8ba3852fb.md)
 
 ---
 
-![Untitled](Untitled.png)
+![Untitled](Dev Opv Basics/Untitled.png)
 
 [Автоматическая регистрация имён хостов в DNS на MikroTik](https://onformix.blogspot.com/2017/01/autoreg-dns-mikrotik.html)
 
@@ -56,11 +56,11 @@ B - переместить курсор в начало слова c конца
 
 При выводе файла /etc/passwd мы получаем примерно вот такой вывод в командную строку.
 
-![Untitled](Untitled%201.png)
+![Untitled](Dev Opv Basics/Untitled%201.png)
 
 ### Пользователь в Linux состоит из таких частей:
 
-![Untitled](Untitled%202.png)
+![Untitled](Dev Opv Basics/Untitled%202.png)
 
 Пользователь с uid 0:0 имеет неограниченные права на систему(удаление, изменение, добавление)
 
@@ -88,7 +88,7 @@ adduser username
 
 Пример
 
-![Untitled](Untitled%203.png)
+![Untitled](Dev Opv Basics/Untitled%203.png)
 
 ### Файл с паролями
 
@@ -98,11 +98,11 @@ adduser username
 
 Структура файла выглядит так
 
-![Untitled](Untitled%204.png)
+![Untitled](Dev Opv Basics/Untitled%204.png)
 
 Структура записи в файл выглядит таким образом
 
-![Untitled](Untitled%205.png)
+![Untitled](Dev Opv Basics/Untitled%205.png)
 
 ### Смена пароля
 
@@ -167,11 +167,11 @@ sudo chmod 777 example.txt
 
 Файл групп выглядит так
 
-![Untitled](Untitled%206.png)
+![Untitled](Dev Opv Basics/Untitled%206.png)
 
 Формат записи группы выглядит таким образом
 
-![Untitled](Untitled%207.png)
+![Untitled](Dev Opv Basics/Untitled%207.png)
 
 ### Создание группы
 
@@ -181,7 +181,7 @@ sudo chmod 777 example.txt
 groupadd groupname
 ```
 
-![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
+![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](Dev Opv Basics/707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
 
 # Подключение при помощи ключа SSH
 
@@ -238,7 +238,7 @@ groupadd groupname
 
 Вся линейка утилит ls*
 
-![Untitled](Untitled%208.png)
+![Untitled](Dev Opv Basics/Untitled%208.png)
 
 ## Производительность
 
@@ -262,15 +262,15 @@ time dd if=/path/to/file of=/dev/null ms=8k
 
 uptime или w
 
-![Untitled](Untitled%209.png)
+![Untitled](Dev Opv Basics/Untitled%209.png)
 
 Смотрим список процессов - ps -ef
 
 Смотрим дочерние процессы - pstree -p <PID> PID - ID процесса.
 
-![Untitled](Untitled%2010.png)
+![Untitled](Dev Opv Basics/Untitled%2010.png)
 
-![Untitled](Untitled%2011.png)
+![Untitled](Dev Opv Basics/Untitled%2011.png)
 
 # Процессы и перенаправление вывода
 
@@ -346,7 +346,7 @@ du -h - будет показывать размерность файла(МБа
 
 ### STDERR  —  ошибки  —  2
 
-![Untitled](Untitled%2012.png)
+![Untitled](Dev Opv Basics/Untitled%2012.png)
 
 ### Фоновые процессы и полезные команды
 
@@ -384,25 +384,25 @@ traceroute ya.ru &> /dev/null
 
 После этого мы можем посмотреть код возврата командой echo $?
 
-![Untitled](Untitled%2013.png)
+![Untitled](Dev Opv Basics/Untitled%2013.png)
 
 # Планировщик задач Cron
 
 **Cron** позволяет запуcкать команды/скрипты по рассписанию.
 
-![Untitled](Untitled%2014.png)
+![Untitled](Dev Opv Basics/Untitled%2014.png)
 
-![Untitled](Untitled%2015.png)
+![Untitled](Dev Opv Basics/Untitled%2015.png)
 
-![Untitled](Untitled%2016.png)
+![Untitled](Dev Opv Basics/Untitled%2016.png)
 
-![Untitled](Untitled%2017.png)
+![Untitled](Dev Opv Basics/Untitled%2017.png)
 
-![Untitled](Untitled%2018.png)
+![Untitled](Dev Opv Basics/Untitled%2018.png)
 
-![Untitled](Untitled%2019.png)
+![Untitled](Dev Opv Basics/Untitled%2019.png)
 
-![Untitled](Untitled%2020.png)
+![Untitled](Dev Opv Basics/Untitled%2020.png)
 
 # Скрипты
 
@@ -416,17 +416,17 @@ https://losst.pro/napisanie-skriptov-na-bash?ysclid=ly6usffegc342352856
 
 Обозначение переменной в Bash
 
-![Untitled](Untitled%2021.png)
+![Untitled](Dev Opv Basics/Untitled%2021.png)
 
 Принцип определения исполняемого файла
 
-![Untitled](Untitled%2022.png)
+![Untitled](Dev Opv Basics/Untitled%2022.png)
 
 Специальный параметр
 
-![Untitled](Untitled%2023.png)
+![Untitled](Dev Opv Basics/Untitled%2023.png)
 
-![Untitled](Untitled%2024.png)
+![Untitled](Dev Opv Basics/Untitled%2024.png)
 
 ## Исполнение скрипта без указания ./ в определенной директории
 
@@ -452,13 +452,13 @@ source ~./bashrc
 
 После этого у вас появляется возможность запускать скрипты без указания ./  в директории, которую вы указали в переменной PATH.
 
-![Untitled](Untitled%2025.png)
+![Untitled](Dev Opv Basics/Untitled%2025.png)
 
-![Untitled](Untitled%2026.png)
+![Untitled](Dev Opv Basics/Untitled%2026.png)
 
-![Untitled](Untitled%2027.png)
+![Untitled](Dev Opv Basics/Untitled%2027.png)
 
-![Untitled](Untitled%2028.png)
+![Untitled](Dev Opv Basics/Untitled%2028.png)
 
 Для переноса директории содержащей пробелы скриптом, требуется переменную в скрипте заключить в двойные кавычки - “”
 
@@ -479,7 +479,7 @@ fi
 
 [Арифметические операции в Bash скрипте](https://devhops.ru/linux/bash/arithmetics.php)
 
-![Untitled](Untitled%2029.png)
+![Untitled](Dev Opv Basics/Untitled%2029.png)
 
 let - это встроенная функция bash, которая позволяет производить базовые арифметические операции.
 
@@ -542,7 +542,7 @@ done
 
 [ZENCOD.ru](https://zencod.ru/articles/prompt-string-bash/)
 
-![image.png](image.png)
+![image.png](Dev Opv Basics/image.png)
 
 **Ctrl + R - поиск по истории вводимых команд в shell linux.**
 
@@ -550,7 +550,7 @@ done
 
 [Bash Heredoc](https://linuxize.com/post/bash-heredoc/)
 
-![image.png](image%201.png)
+![image.png](Dev Opv Basics/image%201.png)
 
 ## Функции
 
@@ -576,9 +576,9 @@ done
 
 [Использование awk в Linux](https://losst.pro/ispolzovanie-awk-v-linux)
 
-![image.png](image%202.png)
+![image.png](Dev Opv Basics/image%202.png)
 
-![image.png](image%203.png)
+![image.png](Dev Opv Basics/image%203.png)
 
 ## SED
 
@@ -586,23 +586,23 @@ done
 
 [](https://losst.pro/komanda-sed-linux)
 
-![image.png](image%204.png)
+![image.png](Dev Opv Basics/image%204.png)
 
-![image.png](image%205.png)
+![image.png](Dev Opv Basics/image%205.png)
 
-![image.png](image%206.png)
+![image.png](Dev Opv Basics/image%206.png)
 
 ## Best Practices
 
 # IP, DNS
 
-![Untitled](Untitled%2030.png)
+![Untitled](Dev Opv Basics/Untitled%2030.png)
 
 traceroute - программа, которая показывает, какой путь проходит пакет, прежде чем достичь конечный хост.
 
 mtr - расширение для traceroute, которое помимо этого еще и пингует хосты и показывает задержку до этих хостов.
 
-![Untitled](Untitled%2031.png)
+![Untitled](Dev Opv Basics/Untitled%2031.png)
 
 # WWW
 
@@ -610,11 +610,11 @@ mtr - расширение для traceroute, которое помимо это
 
 [Простым языком об HTTP](https://habr.com/ru/articles/215117/)
 
-![image.png](image%207.png)
+![image.png](Dev Opv Basics/image%207.png)
 
-![image.png](image%208.png)
+![image.png](Dev Opv Basics/image%208.png)
 
-![image.png](image%209.png)
+![image.png](Dev Opv Basics/image%209.png)
 
 # Системы инициализации
 
@@ -626,33 +626,33 @@ mtr - расширение для traceroute, которое помимо это
 
 [Systemd за пять минут](https://habr.com/ru/companies/slurm/articles/255845/)
 
-![image.png](image%2010.png)
+![image.png](Dev Opv Basics/image%2010.png)
 
-![image.png](image%2011.png)
+![image.png](Dev Opv Basics/image%2011.png)
 
-![image.png](image%2012.png)
+![image.png](Dev Opv Basics/image%2012.png)
 
-![image.png](image%2013.png)
+![image.png](Dev Opv Basics/image%2013.png)
 
 ## Systemd
 
 # Основные виды юнитов
 
-![image.png](image%2014.png)
+![image.png](Dev Opv Basics/image%2014.png)
 
-![image.png](image%2015.png)
+![image.png](Dev Opv Basics/image%2015.png)
 
-![image.png](image%2016.png)
+![image.png](Dev Opv Basics/image%2016.png)
 
-![image.png](image%2017.png)
+![image.png](Dev Opv Basics/image%2017.png)
 
-![image.png](image%2018.png)
+![image.png](Dev Opv Basics/image%2018.png)
 
-![image.png](image%2019.png)
+![image.png](Dev Opv Basics/image%2019.png)
 
-![image.png](image%2020.png)
+![image.png](Dev Opv Basics/image%2020.png)
 
-![image.png](image%2021.png)
+![image.png](Dev Opv Basics/image%2021.png)
 
 # Symlink и hardlink
 
@@ -670,7 +670,7 @@ mtr - расширение для traceroute, которое помимо это
 
 [Монтирование диска в Linux - Losst](https://losst.pro/montirovanie-diska-v-linux?ysclid=m0usp3iemx999697633)
 
-![image.png](image%2022.png)
+![image.png](Dev Opv Basics/image%2022.png)
 
 13 - Разметка диска
 
@@ -682,27 +682,27 @@ mtr - расширение для traceroute, которое помимо это
 
 На данном скриншоте показано, как монтируется добавленый диск
 
-![image.png](image%2023.png)
+![image.png](Dev Opv Basics/image%2023.png)
 
 # Реляционные базы данных
 
-![image.png](image%2024.png)
+![image.png](Dev Opv Basics/image%2024.png)
 
-![image.png](image%2025.png)
+![image.png](Dev Opv Basics/image%2025.png)
 
-![image.png](image%2026.png)
+![image.png](Dev Opv Basics/image%2026.png)
 
 ## Типы данных MySQL
 
-![image.png](image%2027.png)
+![image.png](Dev Opv Basics/image%2027.png)
 
 ## DML, DDL, Transaction
 
-![image.png](image%2028.png)
+![image.png](Dev Opv Basics/image%2028.png)
 
-![image.png](image%2029.png)
+![image.png](Dev Opv Basics/image%2029.png)
 
-![image.png](image%2030.png)
+![image.png](Dev Opv Basics/image%2030.png)
 
 ## Транзакции
 
@@ -767,7 +767,7 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 
 # TCP/IP
 
-![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](42B48683-BFE9-4262-AACC-EAA9C9201685.png)
+![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](Dev Opv Basics/42B48683-BFE9-4262-AACC-EAA9C9201685.png)
 
 ## Канальный уровень
 
@@ -777,22 +777,22 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 - Multicast
 - Broadcast
 
-![image.png](image%2031.png)
+![image.png](Dev Opv Basics/image%2031.png)
 
 ## Сетевой уровень
 
 Схема IP пакета
 
-![image.png](image%2032.png)
+![image.png](Dev Opv Basics/image%2032.png)
 
 Маска подсети
 
-![image.png](image%2033.png)
+![image.png](Dev Opv Basics/image%2033.png)
 
-![image.png](image%2034.png)
+![image.png](Dev Opv Basics/image%2034.png)
 
 ### Частные диапозоны
 
-![image.png](image%2035.png)
+![image.png](Dev Opv Basics/image%2035.png)
 
 ## Транспортный уровень
