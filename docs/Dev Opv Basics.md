@@ -9,7 +9,7 @@
 
 ---
 
-[Proxmox](docs/Proxmox.md)
+[Proxmox](Subpages/Proxmox.md)
 
 ---
 
