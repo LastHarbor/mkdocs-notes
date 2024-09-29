@@ -1,19 +1,19 @@
-# Dev Opv Basics
+# DevOpsBasics
 
 # Страницы
 
-Настройка ZSH окружения Linux - 
- https://www.linuxfordevices.com/tutorials/linux/make-arch-terminal-awesome
+Настройка ZSH окружения Linux -
+ <https://www.linuxfordevices.com/tutorials/linux/make-arch-terminal-awesome>
 
 ---
 
 ---
 
-[Proxmox](Dev Opv Basics/Proxmox%209f19963ad6b9487e9527e2f8ba3852fb.md)
+[Proxmox](docs/Proxmox.md)
 
 ---
 
-![Untitled](Dev Opv Basics/Untitled.png)
+![Untitled](DevOpsBasics/Untitled.png)
 
 [Автоматическая регистрация имён хостов в DNS на MikroTik](https://onformix.blogspot.com/2017/01/autoreg-dns-mikrotik.html)
 
@@ -21,7 +21,7 @@
 
 ---
 
-Настройка fail2ban для защиты sshd 
+Настройка fail2ban для защиты sshd
 
 [Как установить Fail2ban для защиты SSH на CentOS / RHEL 8](https://blog.sedicomm.com/2019/10/23/kak-ustanovit-fail2ban-dlya-zashhity-ssh-na-centos-rhel-8/)
 
@@ -56,11 +56,11 @@ B - переместить курсор в начало слова c конца
 
 При выводе файла /etc/passwd мы получаем примерно вот такой вывод в командную строку.
 
-![Untitled](Dev Opv Basics/Untitled%201.png)
+![Untitled](DevOpsBasics/Untitled%201.png)
 
-### Пользователь в Linux состоит из таких частей:
+### Пользователь в Linux состоит из таких частей
 
-![Untitled](Dev Opv Basics/Untitled%202.png)
+![Untitled](DevOpsBasics/Untitled%202.png)
 
 Пользователь с uid 0:0 имеет неограниченные права на систему(удаление, изменение, добавление)
 
@@ -68,7 +68,7 @@ B - переместить курсор в начало слова c конца
 
 Создать пользователя мы можем при помощи команды useradd
 
-Пример команды 
+Пример команды
 
 ```bash
 useradd username -b /home/username -c "Username Usernameov" -g userfroup -p password
@@ -83,12 +83,12 @@ adduser username
 
 ### Редактирование пользователя
 
-Для редактирования атрибутов пользователя используется команда usermod 
+Для редактирования атрибутов пользователя используется команда usermod
 Команда не является интерактивной, поэтому для изменения атрибутов нужно использовать дополнительные ключи.
 
 Пример
 
-![Untitled](Dev Opv Basics/Untitled%203.png)
+![Untitled](DevOpsBasics/Untitled%203.png)
 
 ### Файл с паролями
 
@@ -98,11 +98,11 @@ adduser username
 
 Структура файла выглядит так
 
-![Untitled](Dev Opv Basics/Untitled%204.png)
+![Untitled](DevOpsBasics/Untitled%204.png)
 
 Структура записи в файл выглядит таким образом
 
-![Untitled](Dev Opv Basics/Untitled%205.png)
+![Untitled](DevOpsBasics/Untitled%205.png)
 
 ### Смена пароля
 
@@ -144,16 +144,16 @@ chmod +t dir - даёт права на удаление только созда
 ```
 
 Материал по данной теме
-https://losst.pro/prava-dostupa-k-fajlam-v-linux?ysclid=ly5u254la660647224
+<https://losst.pro/prava-dostupa-k-fajlam-v-linux?ysclid=ly5u254la660647224>
 
 ### Права доступа
 
 В Linux можно назначать права доступа цифрами
-Чтение - 4 
+Чтение - 4
 
-Запись - 2 
+Запись - 2
 
-Исполнение - 1 
+Исполнение - 1
 
 Пример назначения прав доступа выглядит так
 
@@ -167,11 +167,11 @@ sudo chmod 777 example.txt
 
 Файл групп выглядит так
 
-![Untitled](Dev Opv Basics/Untitled%206.png)
+![Untitled](DevOpsBasics/Untitled%206.png)
 
 Формат записи группы выглядит таким образом
 
-![Untitled](Dev Opv Basics/Untitled%207.png)
+![Untitled](DevOpsBasics/Untitled%207.png)
 
 ### Создание группы
 
@@ -181,7 +181,7 @@ sudo chmod 777 example.txt
 groupadd groupname
 ```
 
-![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](Dev Opv Basics/707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
+![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](DevOpsBasics/707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
 
 # Подключение при помощи ключа SSH
 
@@ -208,7 +208,7 @@ groupadd groupname
 
 Краткое имя сервера - hostname
 
-Полное имя - hostname -f 
+Полное имя - hostname -f
 
 Узнать версию OS - cat /etc/os-release
 
@@ -238,7 +238,7 @@ groupadd groupname
 
 Вся линейка утилит ls*
 
-![Untitled](Dev Opv Basics/Untitled%208.png)
+![Untitled](DevOpsBasics/Untitled%208.png)
 
 ## Производительность
 
@@ -250,7 +250,7 @@ groupadd groupname
 
 Диски
 
-Скорость записи: 
+Скорость записи:
 
 dd if=/dev/zero of /tmp/test1.img bs=256M count=20 oflag-dsync
 
@@ -262,15 +262,15 @@ time dd if=/path/to/file of=/dev/null ms=8k
 
 uptime или w
 
-![Untitled](Dev Opv Basics/Untitled%209.png)
+![Untitled](DevOpsBasics/Untitled%209.png)
 
 Смотрим список процессов - ps -ef
 
 Смотрим дочерние процессы - pstree -p <PID> PID - ID процесса.
 
-![Untitled](Dev Opv Basics/Untitled%2010.png)
+![Untitled](DevOpsBasics/Untitled%2010.png)
 
-![Untitled](Dev Opv Basics/Untitled%2011.png)
+![Untitled](DevOpsBasics/Untitled%2011.png)
 
 # Процессы и перенаправление вывода
 
@@ -286,7 +286,7 @@ kill "pid"
 
 Она используется для выборки колонок из таблицы или полей из каждой строки файла. Если применить терминологию баз данных, команда cut выполняет операцию проекции отношения.
 
-https://losst.pro/komanda-cut-linux?ysclid=ly5jxs4ib2795871247
+<https://losst.pro/komanda-cut-linux?ysclid=ly5jxs4ib2795871247>
 
 ```bash
 cut опции путь_к_файлу
@@ -294,13 +294,13 @@ cut опции путь_к_файлу
 
 **Команда** **tr** - это утилита командной строки UNIX для перевода или удаления символов. Она поддерживает ряд преобразований, включая преобразование верхнего регистра в нижний, сжатие повторяющихся символов, удаление определенных символов и базовый поиск и замену.
 
-https://losst.pro/komanda-tr-v-linux?ysclid=ly5jvjn3ds742307682
+<https://losst.pro/komanda-tr-v-linux?ysclid=ly5jvjn3ds742307682>
 
 ```bash
 tr [КЛЮЧ]... НАБОР1 [НАБОР2]
 ```
 
-https://losst.pro/komanda-xargs-linux?ysclid=ly5juzw62w597349948
+<https://losst.pro/komanda-xargs-linux?ysclid=ly5juzw62w597349948>
 
 **xargs — утилита для формирования списка аргументов и выполнения команды в UNIX-подобных операционных системах.**
 
@@ -318,7 +318,7 @@ https://losst.pro/komanda-xargs-linux?ysclid=ly5juzw62w597349948
 2. Когда требуется объединить более одного файла (например, части одного файла, разбитого командой split), либо файл(ы) с потоком стандартного ввода.
 3. Когда требуется просмотреть содержимое файла.
 
-https://losst.pro/komanda-cat-linux?ysclid=ly5k0de324112823541
+<https://losst.pro/komanda-cat-linux?ysclid=ly5k0de324112823541>
 
 ```bash
 cat опции файл1 файл2 ...
@@ -326,7 +326,7 @@ cat опции файл1 файл2 ...
 
 Команда **du** (Disk Usage, т.е. использование диска) – это стандартная команда Unix/Linux, используется для показа суммарной информации об использовании диска файлами и директориями.
 
-https://losst.pro/komanda-du-v-linux?ysclid=ly5lix5244130731945
+<https://losst.pro/komanda-du-v-linux?ysclid=ly5lix5244130731945>
 
 ```bash
 du опции /путь/к/папке
@@ -346,7 +346,7 @@ du -h - будет показывать размерность файла(МБа
 
 ### STDERR  —  ошибки  —  2
 
-![Untitled](Dev Opv Basics/Untitled%2012.png)
+![Untitled](DevOpsBasics/Untitled%2012.png)
 
 ### Фоновые процессы и полезные команды
 
@@ -360,14 +360,14 @@ declare с ключом -r используется для создания ко
 declare -r 
 ```
 
-alias позволяет посмотреть список всех доступных алиасов в системе (алиас присваивается для упрощения работы с командой - например ps -auxf сокращается до pss по средствам выполнения команды 
+alias позволяет посмотреть список всех доступных алиасов в системе (алиас присваивается для упрощения работы с командой - например ps -auxf сокращается до pss по средствам выполнения команды
 
 ```bash
 alias pss “ps -auxf”
 ```
 
 Для выполнения команды в фоновом режиме достаточно добавить в конце команды символ &
-https://losst.pro/kak-zapustit-protsess-v-fone-linux?ysclid=lz8gg59p44543443975
+<https://losst.pro/kak-zapustit-protsess-v-fone-linux?ysclid=lz8gg59p44543443975>
 
 Команда jobs показывает все фоновые задачи
 
@@ -375,7 +375,7 @@ bg **номер процесса*  -* переводит процесс в фо�
 
 fg - выводит процесс из фона
 
-Перенаправление вывода команды в пустоту 
+Перенаправление вывода команды в пустоту
 
 ```bash
 *команда* напрмер
@@ -384,31 +384,31 @@ traceroute ya.ru &> /dev/null
 
 После этого мы можем посмотреть код возврата командой echo $?
 
-![Untitled](Dev Opv Basics/Untitled%2013.png)
+![Untitled](DevOpsBasics/Untitled%2013.png)
 
 # Планировщик задач Cron
 
 **Cron** позволяет запуcкать команды/скрипты по рассписанию.
 
-![Untitled](Dev Opv Basics/Untitled%2014.png)
+![Untitled](DevOpsBasics/Untitled%2014.png)
 
-![Untitled](Dev Opv Basics/Untitled%2015.png)
+![Untitled](DevOpsBasics/Untitled%2015.png)
 
-![Untitled](Dev Opv Basics/Untitled%2016.png)
+![Untitled](DevOpsBasics/Untitled%2016.png)
 
-![Untitled](Dev Opv Basics/Untitled%2017.png)
+![Untitled](DevOpsBasics/Untitled%2017.png)
 
-![Untitled](Dev Opv Basics/Untitled%2018.png)
+![Untitled](DevOpsBasics/Untitled%2018.png)
 
-![Untitled](Dev Opv Basics/Untitled%2019.png)
+![Untitled](DevOpsBasics/Untitled%2019.png)
 
-![Untitled](Dev Opv Basics/Untitled%2020.png)
+![Untitled](DevOpsBasics/Untitled%2020.png)
 
 # Скрипты
 
 Написание скрипта начинается вот с такой строчки
 
-https://losst.pro/napisanie-skriptov-na-bash?ysclid=ly6usffegc342352856
+<https://losst.pro/napisanie-skriptov-na-bash?ysclid=ly6usffegc342352856>
 
 ```bash
 #! /bin/bash
@@ -416,29 +416,29 @@ https://losst.pro/napisanie-skriptov-na-bash?ysclid=ly6usffegc342352856
 
 Обозначение переменной в Bash
 
-![Untitled](Dev Opv Basics/Untitled%2021.png)
+![Untitled](DevOpsBasics/Untitled%2021.png)
 
 Принцип определения исполняемого файла
 
-![Untitled](Dev Opv Basics/Untitled%2022.png)
+![Untitled](DevOpsBasics/Untitled%2022.png)
 
 Специальный параметр
 
-![Untitled](Dev Opv Basics/Untitled%2023.png)
+![Untitled](DevOpsBasics/Untitled%2023.png)
 
-![Untitled](Dev Opv Basics/Untitled%2024.png)
+![Untitled](DevOpsBasics/Untitled%2024.png)
 
 ## Исполнение скрипта без указания ./ в определенной директории
 
 Для того скрипт выполнялся без указания директории ./ необходимо добавить нужную нам директорию в $PATH. Для этого мы выполним следующие действия.
 
-1. Убедиться что скрипт имеет право на исполнение. Для этого используйте команду chmod 
+1. Убедиться что скрипт имеет право на исполнение. Для этого используйте команду chmod
 
 ```bash
 chmod +x my_scripth.sh
 ```
 
-1. Добавляем нужную нам директорию в переменную окружения PATH. Для этого откройте файл конфигурации вашего shell ( обычно это .bashrc или .bash_profile) и добавьте в конце строчку 
+1. Добавляем нужную нам директорию в переменную окружения PATH. Для этого откройте файл конфигурации вашего shell ( обычно это .bashrc или .bash_profile) и добавьте в конце строчку
 
 ```bash
 export PATH=$PATH:"/home/%user%/scripts"
@@ -452,26 +452,26 @@ source ~./bashrc
 
 После этого у вас появляется возможность запускать скрипты без указания ./  в директории, которую вы указали в переменной PATH.
 
-![Untitled](Dev Opv Basics/Untitled%2025.png)
+![Untitled](DevOpsBasics/Untitled%2025.png)
 
-![Untitled](Dev Opv Basics/Untitled%2026.png)
+![Untitled](DevOpsBasics/Untitled%2026.png)
 
-![Untitled](Dev Opv Basics/Untitled%2027.png)
+![Untitled](DevOpsBasics/Untitled%2027.png)
 
-![Untitled](Dev Opv Basics/Untitled%2028.png)
+![Untitled](DevOpsBasics/Untitled%2028.png)
 
 Для переноса директории содержащей пробелы скриптом, требуется переменную в скрипте заключить в двойные кавычки - “”
 
 ### Условный оператор if
 
-В Bash условный оператор if записывается следующим образом 
+В Bash условный оператор if записывается следующим образом
 
 ```bash
 if [ a = b ]
-	then
-	echo "A = B"
-	else
-	echo "A do not match B"
+ then
+ echo "A = B"
+ else
+ echo "A do not match B"
 fi
 ```
 
@@ -479,7 +479,7 @@ fi
 
 [Арифметические операции в Bash скрипте](https://devhops.ru/linux/bash/arithmetics.php)
 
-![Untitled](Dev Opv Basics/Untitled%2029.png)
+![Untitled](DevOpsBasics/Untitled%2029.png)
 
 let - это встроенная функция bash, которая позволяет производить базовые арифметические операции.
 
@@ -542,7 +542,7 @@ done
 
 [ZENCOD.ru](https://zencod.ru/articles/prompt-string-bash/)
 
-![image.png](Dev Opv Basics/image.png)
+![image.png](DevOpsBasics/image.png)
 
 **Ctrl + R - поиск по истории вводимых команд в shell linux.**
 
@@ -550,7 +550,7 @@ done
 
 [Bash Heredoc](https://linuxize.com/post/bash-heredoc/)
 
-![image.png](Dev Opv Basics/image%201.png)
+![image.png](DevOpsBasics/image%201.png)
 
 ## Функции
 
@@ -576,9 +576,9 @@ done
 
 [Использование awk в Linux](https://losst.pro/ispolzovanie-awk-v-linux)
 
-![image.png](Dev Opv Basics/image%202.png)
+![image.png](DevOpsBasics/image%202.png)
 
-![image.png](Dev Opv Basics/image%203.png)
+![image.png](DevOpsBasics/image%203.png)
 
 ## SED
 
@@ -586,23 +586,23 @@ done
 
 [](https://losst.pro/komanda-sed-linux)
 
-![image.png](Dev Opv Basics/image%204.png)
+![image.png](DevOpsBasics/image%204.png)
 
-![image.png](Dev Opv Basics/image%205.png)
+![image.png](DevOpsBasics/image%205.png)
 
-![image.png](Dev Opv Basics/image%206.png)
+![image.png](DevOpsBasics/image%206.png)
 
 ## Best Practices
 
 # IP, DNS
 
-![Untitled](Dev Opv Basics/Untitled%2030.png)
+![Untitled](DevOpsBasics/Untitled%2030.png)
 
 traceroute - программа, которая показывает, какой путь проходит пакет, прежде чем достичь конечный хост.
 
 mtr - расширение для traceroute, которое помимо этого еще и пингует хосты и показывает задержку до этих хостов.
 
-![Untitled](Dev Opv Basics/Untitled%2031.png)
+![Untitled](DevOpsBasics/Untitled%2031.png)
 
 # WWW
 
@@ -610,11 +610,11 @@ mtr - расширение для traceroute, которое помимо это
 
 [Простым языком об HTTP](https://habr.com/ru/articles/215117/)
 
-![image.png](Dev Opv Basics/image%207.png)
+![image.png](DevOpsBasics/image%207.png)
 
-![image.png](Dev Opv Basics/image%208.png)
+![image.png](DevOpsBasics/image%208.png)
 
-![image.png](Dev Opv Basics/image%209.png)
+![image.png](DevOpsBasics/image%209.png)
 
 # Системы инициализации
 
@@ -626,33 +626,33 @@ mtr - расширение для traceroute, которое помимо это
 
 [Systemd за пять минут](https://habr.com/ru/companies/slurm/articles/255845/)
 
-![image.png](Dev Opv Basics/image%2010.png)
+![image.png](DevOpsBasics/image%2010.png)
 
-![image.png](Dev Opv Basics/image%2011.png)
+![image.png](DevOpsBasics/image%2011.png)
 
-![image.png](Dev Opv Basics/image%2012.png)
+![image.png](DevOpsBasics/image%2012.png)
 
-![image.png](Dev Opv Basics/image%2013.png)
+![image.png](DevOpsBasics/image%2013.png)
 
 ## Systemd
 
 # Основные виды юнитов
 
-![image.png](Dev Opv Basics/image%2014.png)
+![image.png](DevOpsBasics/image%2014.png)
 
-![image.png](Dev Opv Basics/image%2015.png)
+![image.png](DevOpsBasics/image%2015.png)
 
-![image.png](Dev Opv Basics/image%2016.png)
+![image.png](DevOpsBasics/image%2016.png)
 
-![image.png](Dev Opv Basics/image%2017.png)
+![image.png](DevOpsBasics/image%2017.png)
 
-![image.png](Dev Opv Basics/image%2018.png)
+![image.png](DevOpsBasics/image%2018.png)
 
-![image.png](Dev Opv Basics/image%2019.png)
+![image.png](DevOpsBasics/image%2019.png)
 
-![image.png](Dev Opv Basics/image%2020.png)
+![image.png](DevOpsBasics/image%2020.png)
 
-![image.png](Dev Opv Basics/image%2021.png)
+![image.png](DevOpsBasics/image%2021.png)
 
 # Symlink и hardlink
 
@@ -670,7 +670,7 @@ mtr - расширение для traceroute, которое помимо это
 
 [Монтирование диска в Linux - Losst](https://losst.pro/montirovanie-diska-v-linux?ysclid=m0usp3iemx999697633)
 
-![image.png](Dev Opv Basics/image%2022.png)
+![image.png](DevOpsBasics/image%2022.png)
 
 13 - Разметка диска
 
@@ -682,27 +682,27 @@ mtr - расширение для traceroute, которое помимо это
 
 На данном скриншоте показано, как монтируется добавленый диск
 
-![image.png](Dev Opv Basics/image%2023.png)
+![image.png](DevOpsBasics/image%2023.png)
 
 # Реляционные базы данных
 
-![image.png](Dev Opv Basics/image%2024.png)
+![image.png](DevOpsBasics/image%2024.png)
 
-![image.png](Dev Opv Basics/image%2025.png)
+![image.png](DevOpsBasics/image%2025.png)
 
-![image.png](Dev Opv Basics/image%2026.png)
+![image.png](DevOpsBasics/image%2026.png)
 
 ## Типы данных MySQL
 
-![image.png](Dev Opv Basics/image%2027.png)
+![image.png](DevOpsBasics/image%2027.png)
 
 ## DML, DDL, Transaction
 
-![image.png](Dev Opv Basics/image%2028.png)
+![image.png](DevOpsBasics/image%2028.png)
 
-![image.png](Dev Opv Basics/image%2029.png)
+![image.png](DevOpsBasics/image%2029.png)
 
-![image.png](Dev Opv Basics/image%2030.png)
+![image.png](DevOpsBasics/image%2030.png)
 
 ## Транзакции
 
@@ -767,32 +767,32 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 
 # TCP/IP
 
-![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](Dev Opv Basics/42B48683-BFE9-4262-AACC-EAA9C9201685.png)
+![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](DevOpsBasics/42B48683-BFE9-4262-AACC-EAA9C9201685.png)
 
 ## Канальный уровень
 
-Типы передачи данных 
+Типы передачи данных
 
 - Unicast
 - Multicast
 - Broadcast
 
-![image.png](Dev Opv Basics/image%2031.png)
+![image.png](DevOpsBasics/image%2031.png)
 
 ## Сетевой уровень
 
 Схема IP пакета
 
-![image.png](Dev Opv Basics/image%2032.png)
+![image.png](DevOpsBasics/image%2032.png)
 
 Маска подсети
 
-![image.png](Dev Opv Basics/image%2033.png)
+![image.png](DevOpsBasics/image%2033.png)
 
-![image.png](Dev Opv Basics/image%2034.png)
+![image.png](DevOpsBasics/image%2034.png)
 
 ### Частные диапозоны
 
-![image.png](Dev Opv Basics/image%2035.png)
+![image.png](DevOpsBasics/image%2035.png)
 
 ## Транспортный уровень
