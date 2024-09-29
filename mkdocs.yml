@@ -4,3 +4,7 @@ theme:
   name: material
 site_author: Anton Kulakevich
 copyright: Anton Kulakevich, AwesomeEduSPB
+nav:
+    - DevOpsBasics: 
+            - Basics: Dev Ops Basics.md
+            - Proxmox: Proxmox.md
