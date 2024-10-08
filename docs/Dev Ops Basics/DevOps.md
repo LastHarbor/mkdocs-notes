@@ -1,4 +1,4 @@
-# DevOpsBasics
+# DevOps
 
 ## Страницы
 
@@ -7,13 +7,11 @@
 
 ---
 
----
-
 [Proxmox](Proxmox.md)
 
 ---
 
-![Untitled](DevOpsBasics/Untitled.png)
+![Untitled](./Pictures/Untitled.png)
 
 [Автоматическая регистрация имён хостов в DNS на MikroTik](https://onformix.blogspot.com/2017/01/autoreg-dns-mikrotik.html)
 
@@ -56,11 +54,11 @@ B - переместить курсор в начало слова c конца
 
 При выводе файла /etc/passwd мы получаем примерно вот такой вывод в командную строку.
 
-![Untitled](DevOpsBasics/Untitled%201.png)
+![Untitled](./Pictures/Untitled%201.png)
 
 ### Пользователь в Linux состоит из таких частей
 
-![Untitled](DevOpsBasics/Untitled%202.png)
+![Untitled](./Pictures/Untitled%202.png)
 
 Пользователь с uid 0:0 имеет неограниченные права на систему(удаление, изменение, добавление)
 
@@ -88,7 +86,7 @@ adduser username
 
 Пример
 
-![Untitled](DevOpsBasics/Untitled%203.png)
+![Untitled](./Pictures/Untitled%203.png)
 
 ### Файл с паролями
 
@@ -98,11 +96,11 @@ adduser username
 
 Структура файла выглядит так
 
-![Untitled](DevOpsBasics/Untitled%204.png)
+![Untitled](./Pictures/Untitled%204.png)
 
 Структура записи в файл выглядит таким образом
 
-![Untitled](DevOpsBasics/Untitled%205.png)
+![Untitled](./Pictures/Untitled%205.png)
 
 ### Смена пароля
 
@@ -167,11 +165,11 @@ sudo chmod 777 example.txt
 
 Файл групп выглядит так
 
-![Untitled](DevOpsBasics/Untitled%206.png)
+![Untitled](./Pictures/Untitled%206.png)
 
 Формат записи группы выглядит таким образом
 
-![Untitled](DevOpsBasics/Untitled%207.png)
+![Untitled](./Pictures/Untitled%207.png)
 
 ### Создание группы
 
@@ -181,7 +179,7 @@ sudo chmod 777 example.txt
 groupadd groupname
 ```
 
-![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](DevOpsBasics/707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
+![{707CF12C-DC1C-4D43-9C1D-94D959FFFBE8}.png](./Pictures/707CF12C-DC1C-4D43-9C1D-94D959FFFBE8.png)
 
 ## Подключение при помощи ключа SSH
 
@@ -238,7 +236,7 @@ groupadd groupname
 
 Вся линейка утилит ls*
 
-![Untitled](DevOpsBasics/Untitled%208.png)
+![Untitled](./Pictures/Untitled%208.png)
 
 ### Производительность
 
@@ -262,15 +260,15 @@ time dd if=/path/to/file of=/dev/null ms=8k
 
 uptime или w
 
-![Untitled](DevOpsBasics/Untitled%209.png)
+![Untitled](./Pictures/Untitled%209.png)
 
 Смотрим список процессов - ps -ef
 
 Смотрим дочерние процессы - pstree -p <PID> PID - ID процесса.
 
-![Untitled](DevOpsBasics/Untitled%2010.png)
+![Untitled](./Pictures/Untitled%2010.png)
 
-![Untitled](DevOpsBasics/Untitled%2011.png)
+![Untitled](./Pictures/Untitled%2011.png)
 
 ## Процессы и перенаправление вывода
 
@@ -346,7 +344,7 @@ du -h - будет показывать размерность файла(МБа
 
 #### STDERR  —  ошибки  —  2
 
-![Untitled](DevOpsBasics/Untitled%2012.png)
+![Untitled](./Pictures/Untitled%2012.png)
 
 ### Фоновые процессы и полезные команды
 
@@ -384,25 +382,25 @@ traceroute ya.ru &> /dev/null
 
 После этого мы можем посмотреть код возврата командой echo $?
 
-![Untitled](DevOpsBasics/Untitled%2013.png)
+![Untitled](./Pictures/Untitled%2013.png)
 
 ## Планировщик задач Cron
 
 **Cron** позволяет запуcкать команды/скрипты по рассписанию.
 
-![Untitled](DevOpsBasics/Untitled%2014.png)
+![Untitled](./Pictures/Untitled%2014.png)
 
-![Untitled](DevOpsBasics/Untitled%2015.png)
+![Untitled](./Pictures/Untitled%2015.png)
 
-![Untitled](DevOpsBasics/Untitled%2016.png)
+![Untitled](./Pictures/Untitled%2016.png)
 
-![Untitled](DevOpsBasics/Untitled%2017.png)
+![Untitled](./Pictures/Untitled%2017.png)
 
-![Untitled](DevOpsBasics/Untitled%2018.png)
+![Untitled](./Pictures/Untitled%2018.png)
 
-![Untitled](DevOpsBasics/Untitled%2019.png)
+![Untitled](./Pictures/Untitled%2019.png)
 
-![Untitled](DevOpsBasics/Untitled%2020.png)
+![Untitled](./Pictures/Untitled%2020.png)
 
 ## Скрипты
 
@@ -416,17 +414,17 @@ traceroute ya.ru &> /dev/null
 
 Обозначение переменной в Bash
 
-![Untitled](DevOpsBasics/Untitled%2021.png)
+![Untitled](./Pictures/Untitled%2021.png)
 
 Принцип определения исполняемого файла
 
-![Untitled](DevOpsBasics/Untitled%2022.png)
+![Untitled](./Pictures/Untitled%2022.png)
 
 Специальный параметр
 
-![Untitled](DevOpsBasics/Untitled%2023.png)
+![Untitled](./Pictures/Untitled%2023.png)
 
-![Untitled](DevOpsBasics/Untitled%2024.png)
+![Untitled](./Pictures/Untitled%2024.png)
 
 ### Исполнение скрипта без указания ./ в определенной директории
 
@@ -452,13 +450,13 @@ source ~./bashrc
 
 После этого у вас появляется возможность запускать скрипты без указания ./  в директории, которую вы указали в переменной PATH.
 
-![Untitled](DevOpsBasics/Untitled%2025.png)
+![Untitled](./Pictures/Untitled%2025.png)
 
-![Untitled](DevOpsBasics/Untitled%2026.png)
+![Untitled](./Pictures/Untitled%2026.png)
 
-![Untitled](DevOpsBasics/Untitled%2027.png)
+![Untitled](./Pictures/Untitled%2027.png)
 
-![Untitled](DevOpsBasics/Untitled%2028.png)
+![Untitled](./Pictures/Untitled%2028.png)
 
 Для переноса директории содержащей пробелы скриптом, требуется переменную в скрипте заключить в двойные кавычки - “”
 
@@ -479,7 +477,7 @@ fi
 
 [Арифметические операции в Bash скрипте](https://devhops.ru/linux/bash/arithmetics.php)
 
-![Untitled](DevOpsBasics/Untitled%2029.png)
+![Untitled](./Pictures/Untitled%2029.png)
 
 let - это встроенная функция bash, которая позволяет производить базовые арифметические операции.
 
@@ -542,7 +540,7 @@ done
 
 [ZENCOD.ru](https://zencod.ru/articles/prompt-string-bash/)
 
-![image.png](DevOpsBasics/image.png)
+![image.png](./Pictures/image.png)
 
 **Ctrl + R - поиск по истории вводимых команд в shell linux.**
 
@@ -550,7 +548,7 @@ done
 
 [Bash Heredoc](https://linuxize.com/post/bash-heredoc/)
 
-![image.png](DevOpsBasics/image%201.png)
+![image.png](./Pictures/image%201.png)
 
 #### Функции
 
@@ -576,9 +574,9 @@ done
 
 [Использование awk в Linux](https://losst.pro/ispolzovanie-awk-v-linux)
 
-![image.png](DevOpsBasics/image%202.png)
+![image.png](./Pictures/image%202.png)
 
-![image.png](DevOpsBasics/image%203.png)
+![image.png](./Pictures/image%203.png)
 
 #### SED
 
@@ -586,23 +584,23 @@ done
 
 [](https://losst.pro/komanda-sed-linux)
 
-![image.png](DevOpsBasics/image%204.png)
+![image.png](./Pictures/image%204.png)
 
-![image.png](DevOpsBasics/image%205.png)
+![image.png](./Pictures/image%205.png)
 
-![image.png](DevOpsBasics/image%206.png)
+![image.png](./Pictures/image%206.png)
 
 #### Best Practices
 
 ## IP, DNS
 
-![Untitled](DevOpsBasics/Untitled%2030.png)
+![Untitled](./Pictures/Untitled%2030.png)
 
 traceroute - программа, которая показывает, какой путь проходит пакет, прежде чем достичь конечный хост.
 
 mtr - расширение для traceroute, которое помимо этого еще и пингует хосты и показывает задержку до этих хостов.
 
-![Untitled](DevOpsBasics/Untitled%2031.png)
+![Untitled](./Pictures/Untitled%2031.png)
 
 ## WWW
 
@@ -610,11 +608,11 @@ mtr - расширение для traceroute, которое помимо это
 
 [Простым языком об HTTP](https://habr.com/ru/articles/215117/)
 
-![image.png](DevOpsBasics/image%207.png)
+![image.png](./Pictures/image%207.png)
 
-![image.png](DevOpsBasics/image%208.png)
+![image.png](./Pictures/image%208.png)
 
-![image.png](DevOpsBasics/image%209.png)
+![image.png](./Pictures/image%209.png)
 
 ## Системы инициализации
 
@@ -626,33 +624,33 @@ mtr - расширение для traceroute, которое помимо это
 
 [Systemd за пять минут](https://habr.com/ru/companies/slurm/articles/255845/)
 
-![image.png](DevOpsBasics/image%2010.png)
+![image.png](./Pictures/image%2010.png)
 
-![image.png](DevOpsBasics/image%2011.png)
+![image.png](./Pictures/image%2011.png)
 
-![image.png](DevOpsBasics/image%2012.png)
+![image.png](./Pictures/image%2012.png)
 
-![image.png](DevOpsBasics/image%2013.png)
+![image.png](./Pictures/image%2013.png)
 
 ### Systemd
 
 ### Основные виды юнитов
 
-![image.png](DevOpsBasics/image%2014.png)
+![image.png](./Pictures/image%2014.png)
 
-![image.png](DevOpsBasics/image%2015.png)
+![image.png](./Pictures/image%2015.png)
 
-![image.png](DevOpsBasics/image%2016.png)
+![image.png](./Pictures/image%2016.png)
 
-![image.png](DevOpsBasics/image%2017.png)
+![image.png](./Pictures/image%2017.png)
 
-![image.png](DevOpsBasics/image%2018.png)
+![image.png](./Pictures/image%2018.png)
 
-![image.png](DevOpsBasics/image%2019.png)
+![image.png](./Pictures/image%2019.png)
 
-![image.png](DevOpsBasics/image%2020.png)
+![image.png](./Pictures/image%2020.png)
 
-![image.png](DevOpsBasics/image%2021.png)
+![image.png](./Pictures/image%2021.png)
 
 ## Symlink и hardlink
 
@@ -670,7 +668,7 @@ mtr - расширение для traceroute, которое помимо это
 
 [Монтирование диска в Linux - Losst](https://losst.pro/montirovanie-diska-v-linux?ysclid=m0usp3iemx999697633)
 
-![image.png](DevOpsBasics/image%2022.png)
+![image.png](./Pictures/image%2022.png)
 
 13 - Разметка диска
 
@@ -682,27 +680,27 @@ mtr - расширение для traceroute, которое помимо это
 
 На данном скриншоте показано, как монтируется добавленый диск
 
-![image.png](DevOpsBasics/image%2023.png)
+![image.png](./Pictures/image%2023.png)
 
 ## Реляционные базы данных
 
-![image.png](DevOpsBasics/image%2024.png)
+![image.png](./Pictures/image%2024.png)
 
-![image.png](DevOpsBasics/image%2025.png)
+![image.png](./Pictures/image%2025.png)
 
-![image.png](DevOpsBasics/image%2026.png)
+![image.png](./Pictures/image%2026.png)
 
 ### Типы данных MySQL
 
-![image.png](DevOpsBasics/image%2027.png)
+![image.png](./Pictures/image%2027.png)
 
 ### DML, DDL, Transaction
 
-![image.png](DevOpsBasics/image%2028.png)
+![image.png](./Pictures/image%2028.png)
 
-![image.png](DevOpsBasics/image%2029.png)
+![image.png](./Pictures/image%2029.png)
 
-![image.png](DevOpsBasics/image%2030.png)
+![image.png](./Pictures/image%2030.png)
 
 ### Транзакции
 
@@ -769,7 +767,7 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 
 ## TCP/IP
 
-![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](DevOpsBasics/42B48683-BFE9-4262-AACC-EAA9C9201685.png)
+![{42B48683-BFE9-4262-AACC-EAA9C9201685}.png](./Pictures/42B48683-BFE9-4262-AACC-EAA9C9201685.png)
 
 ### Канальный уровень
 
@@ -779,23 +777,23 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 - Multicast
 - Broadcast
 
-![image.png](DevOpsBasics/image%2031.png)
+![image.png](./Pictures/image%2031.png)
 
 ### Сетевой уровень
 
 Схема IP пакета
 
-![image.png](DevOpsBasics/image%2032.png)
+![image.png](./Pictures/image%2032.png)
 
 Маска подсети
 
-![image.png](DevOpsBasics/image%2033.png)
+![image.png](./Pictures/image%2033.png)
 
-![image.png](DevOpsBasics/image%2034.png)
+![image.png](./Pictures/image%2034.png)
 
 ### Частные диапозоны
 
-![image.png](DevOpsBasics/image%2035.png)
+![image.png](./Pictures/image%2035.png)
 
 ### Транспортный уровень
 

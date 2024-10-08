@@ -1,0 +1,23 @@
+#Site url
+site_name: Notes for DevOps
+site_url: https://lastharbor.github.io/mkdocs-notes/
+
+#Theme
+theme:
+  name: material
+
+#Author
+site_author: Anton Kulakevich
+copyright: Anton Kulakevich, AwesomeEduSPB
+
+#Navigation bar
+nav:
+    - Home: index.md
+    - About: About.md
+    - DevOpsBasics:
+            - Basics: Dev Ops Basics.md
+            - Proxmox: Proxmox.md
+
+#Plugins
+plugins:
+        - search

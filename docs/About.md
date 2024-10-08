@@ -1,4 +1,6 @@
-# About
+# Welcome to Anton's mkdocs
+
+## About
 
 This is my first trying to use vscode and mkdocs for educating and taking notes.
 

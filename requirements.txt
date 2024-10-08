@@ -1,3 +1,2 @@
 mkdocs-material
-mkdocs-awesome-pages-plugin
-git+https://github.com/Andre601/mkdocs-pagenav-generator
+mkdocs-gen-nav-plugin
