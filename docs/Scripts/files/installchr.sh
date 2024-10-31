@@ -1,11 +1,3 @@
-# Скрипты для упрощения жизни
-
-## Полуавтоматическое создание CHR машины на Proxmox
-
-Возникла проблема с тем, чтобы создавать несколько машин с CHR в виртуальном окружении.
-Для упрощения этой задачи был собран скрипт, который скачивает и разворачивает нужный образ в среде Proxmox.
-
-```bash
 #!/bin/bash
 
 # Variables
@@ -86,7 +78,3 @@ echo "Creating VM"
 qm create $vmid --name $vm_name --net0 virtio,bridge=vmbr0 --bootdisk virtio0 --ostype l26 --memory 256 --onboot no --sockets 1 --cores 1 --virtio0 large-pool:$vmid/vm-$vmid-disk-1.qcow2
 
 echo "############## End of Script ##############"
-
-```
-
-[installchr.sh](files/installchr.sh){:download="installchr.sh"}

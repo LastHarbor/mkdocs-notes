@@ -25,3 +25,6 @@ plugins:
   - search
   - gen_nav:
       enabled: true
+  
+markdown_extensions:
+  - attr_list
