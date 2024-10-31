@@ -796,6 +796,3 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 ![image.png](./Pictures/image%2035.png)
 
 ### Транспортный уровень
-
-
-[def]: Proxmox
