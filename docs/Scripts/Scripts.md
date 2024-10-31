@@ -5,6 +5,8 @@
 Возникла проблема с тем, чтобы создавать несколько машин с CHR в виртуальном окружении.
 Для упрощения этой задачи был собран скрипт, который скачивает и разворачивает нужный образ в среде Proxmox.
 
+[installchr.sh](files/installchr.sh){:download="installchr.sh"}
+
 ```bash
 #!/bin/bash
 
@@ -89,4 +91,4 @@ echo "############## End of Script ##############"
 
 ```
 
-[installchr.sh](files/installchr.sh){:download="installchr.sh"}
+
