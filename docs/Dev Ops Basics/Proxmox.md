@@ -1,5 +1,7 @@
 # Proxmox tips
 
+---
+
 ## Убить виртуальную машину
 
 rm /var/lock/qemu-server/***-lock.conf
