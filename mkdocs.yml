@@ -28,3 +28,6 @@ plugins:
   
 markdown_extensions:
   - attr_list
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences

@@ -252,11 +252,19 @@ groupadd groupname
 
 Скорость записи:
 
+```Bash
+
 dd if=/dev/zero of /tmp/test1.img bs=256M count=20 oflag-dsync
+
+```
 
 Скорость чтения
 
+```Bash
+
 time dd if=/path/to/file of=/dev/null ms=8k
+
+```
 
 ### Uptime
 
@@ -755,7 +763,7 @@ mtr - расширение для traceroute, которое помимо это
 
 Создание бэкапа базы данных MySQL происходит следующим образом
 
-```jsx
+```bash
 sudo mysqldump -u root mydb > /tmp/dump.sql
 ```
 
@@ -763,7 +771,7 @@ sudo mysqldump -u root mydb > /tmp/dump.sql
 Так же мы можем заархивировать бэкап после его создания.
 Для этого используем следующую команду
 
-```jsx
+```bash
 sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 ```
 
@@ -798,3 +806,103 @@ sudo mysqldump -u root -p *Password* mydb | gzip > /tmp/dump.sql
 ![image.png](./Pictures/image%2035.png)
 
 ### Транспортный уровень
+
+#### Категории портов
+
+- Хорошо известные порты (0-1023)
+- Зарегистрированные порты (1024 - 49151)
+- Динамические (частные) порты (49152 - 65535)
+
+#### Протокол UDP
+
+Формат протокола
+
+![image.png](./Pictures/udpformat.png)
+
+Socket = 
+
+![image.png](./Pictures/socket.png)
+
+#### Протокол TCP
+
+Характеристика протокола
+
+- Установка соединения
+- Надёжность доставки
+- Доставка и сборка сегментов в определённом порядке
+- Контроль потока
+
+Состав пакета TCP
+
+![image.png](./Pictures/tcppacket.png)
+
+Флаги TCP
+
+![image.png](./Pictures/tcpflags.png)
+
+![image.png](./Pictures/tcphandshake.png)
+
+![image.png](./Pictures/tcpphases.png)
+
+![image.png](./Pictures/tcphandshake2.png)
+
+[Транспортный протокол TCP - Sysadminium](https://sysadminium.ru/tcp/)
+
+#### Протоколы
+
+![image.png](./Pictures/protocols.png)
+
+![image.png](./Pictures/protocols2.png)
+
+## LAMP Stack
+
+### Межпроцессное взаимодействие
+
+#### 5 состояний процесса
+
+![image.png](./Pictures/processesstate.png)
+
+#### IPC
+
+- Пайпы(конвейер)
+- Сигналы
+- Сокеты
+- Очереди сообщений
+- Семафоры
+- Совместно используемая память
+
+#### Виды IPC
+
+- Локальные
+- Удалённые
+- Высокоуровневые
+
+#### Commands
+
+Узнать родительский процесс у процесса
+
+```bash
+ps -o ppid= "PID"
+```
+
+## Deb - пакет
+
+### Типы лицензий
+
+![image.png](./Pictures/license%20type.png)
+
+### Четыре свободны GPL
+
+![image.png](./Pictures/gplfree.png)
+
+### Виды открытых лицензий
+
+![image.png](./Pictures/typesfreeopenlicenses.png)
+
+![image.png](./Pictures/typesfreeopenlicenses2.png)
+
+![image.png](./Pictures/semifreelic.png)
+
+### Deb пакет
+
+![image.png](./Pictures/debpacketsteps.png)
