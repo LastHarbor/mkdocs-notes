@@ -68,7 +68,7 @@
 
 /tool wol mac=80:E8:2C:E5:A3:4B interface=lan-bridge
 
-/tool fetch url="https://api.telegram.org/bot6386816947:AAEbv6w1vDxn8d_8dT5D5HJIW4Uogmq2XRU/sendmessage?chat_id=429795256&text=WOL PC ok" keep-result=no
+/tool fetch url="https://api.telegram.org/bot"botToken"/sendmessage?chat_id="chatID"&text=WOL PC ok" keep-result=no
 
 
 ```
