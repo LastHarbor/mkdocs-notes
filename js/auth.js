@@ -1,3 +1,10 @@
+window.env = {
+  AUTH0_CLIENT_ID: '""',
+  AUTH0_CLIENT_SECRET: '""',
+  AUTH0_DOMAIN: '""',
+  SECRET_KEY: '""'
+};
+
 window.onload = function() {
     if (!localStorage.getItem('auth_token')) {
         login();
@@ -41,7 +48,6 @@ function validateToken() {
     });
 }
 
-// Helper function to parse hash and store token
 (function() {
     function parseHash(hash) {
         var params = hash.slice(1).split('&').reduce(function(result, item) {
