@@ -39,78 +39,12 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Generate auth.js with secrets
+      - name: Generate auth_config.js with public settings
         run: |
-          echo "window.env = {" > docs/js/auth.js
-          echo "  AUTH0_CLIENT_ID: '\"${{ secrets.AUTH0_CLIENT_ID }}\"'," >> docs/js/auth.js
-          echo "  AUTH0_CLIENT_SECRET: '\"${{ secrets.AUTH0_CLIENT_SECRET }}\"'," >> docs/js/auth.js
-          echo "  AUTH0_DOMAIN: '\"${{ secrets.AUTH0_DOMAIN }}\"'," >> docs/js/auth.js
-          echo "  SECRET_KEY: '\"${{ secrets.SECRET_KEY }}\"'" >> docs/js/auth.js
-          echo "};" >> docs/js/auth.js
-
-          cat << 'EOF' >> docs/js/auth.js
-
-          window.onload = function() {
-              if (!localStorage.getItem('auth_token')) {
-                  login();
-              } else {
-                  validateToken();
-              }
-          };
-
-          function login() {
-              var auth0Domain = window.env.AUTH0_DOMAIN;
-              var clientId = window.env.AUTH0_CLIENT_ID;
-              var redirectUri = window.location.origin;
-              var scope = 'openid profile email';
-
-              var authUrl = `https://${auth0Domain}/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
-
-              window.location = authUrl;
-          }
-
-          function validateToken() {
-              var token = localStorage.getItem('auth_token');
-              var auth0Domain = window.env.AUTH0_DOMAIN;
-
-              fetch(`https://${auth0Domain}/userinfo`, {
-                  headers: {
-                      'Authorization': `Bearer ${token}`
-                  }
-              })
-              .then(response => {
-                  if (!response.ok) {
-                      throw new Error('Token validation failed');
-                  }
-                  return response.json();
-              })
-              .then(data => {
-                  console.log('User authenticated:', data);
-              })
-              .catch(error => {
-                  console.error('Authentication error:', error);
-                  login();
-              });
-          }
-
-          (function() {
-              function parseHash(hash) {
-                  var params = hash.slice(1).split('&').reduce(function(result, item) {
-                      var parts = item.split('=');
-                      result[parts[0]] = parts[1];
-                      return result;
-                  }, {});
-                  return params;
-              }
-              
-              var hash = window.location.hash;
-              if (hash.includes('access_token')) {
-                  var params = parseHash(hash);
-                  localStorage.setItem('auth_token', params['access_token']);
-                  window.location.hash = '';
-              }
-          })();
-          EOF
+          echo "window.env = {" > docs/js/auth_config.js
+          echo "  AUTH0_CLIENT_ID: \\"${{ secrets.AUTH0_CLIENT_ID }}\\"," >> docs/js/auth_config.js
+          echo "  AUTH0_DOMAIN: \\"${{ secrets.AUTH0_DOMAIN }}\\" " >> docs/js/auth_config.js
+          echo "};" >> docs/js/auth_config.js
 
       - name: Build MkDocs site
         run: mkdocs build

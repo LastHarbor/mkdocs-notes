@@ -28,7 +28,7 @@ plugins:
       enabled: true
 
 extra_javascript:
-  - js/env.js
+  - js/auth_config.js
   - js/auth.js
 
 markdown_extensions:
