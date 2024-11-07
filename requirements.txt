@@ -1,2 +1,6 @@
 mkdocs-material
 mkdocs-gen-nav-plugin
+flask 
+authlib
+werkzeug
+python-dotenv
